@@ -37,11 +37,10 @@ import android.widget.FrameLayout;
 import androidx.fragment.app.Fragment;
 
 import com.android.settings.R;
+import com.android.settings.core.HideNonSystemOverlayMixin;
 import com.android.settings.dashboard.suggestions.SuggestionFeatureProviderImpl;
 import com.android.settings.homepage.contextualcards.slices.BatteryFixSliceTest;
-import com.android.settings.testutils.shadow.ShadowPasswordUtils;
 import com.android.settings.testutils.shadow.ShadowUserManager;
-import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
 
 import org.junit.After;
 import org.junit.Before;
@@ -228,6 +227,15 @@ public class SettingsHomepageActivityTest {
         ShadowPasswordUtils.addGrantedPermission(permission);
 
         assertTrue(homepageActivity.isCallingAppPermitted(permission));
+    }
+
+    @Implements(SuggestionFeatureProviderImpl.class)
+    public static class ShadowSuggestionFeatureProviderImpl {
+
+        @Implementation
+        public Class<? extends Fragment> getContextualSuggestionFragment() {
+            return Fragment.class;
+        }
     }
 
     @Implements(SuggestionFeatureProviderImpl.class)

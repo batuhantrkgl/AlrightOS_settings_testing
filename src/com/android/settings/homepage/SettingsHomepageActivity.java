@@ -151,6 +151,25 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         return mCategoryMixin;
     }
 
+    private static final long HOMEPAGE_LOADING_TIMEOUT_MS = 300;
+
+    private View mHomepageView;
+    private View mSuggestionView;
+
+    /**
+     * Shows the homepage and shows/hides the suggestion together. Only allows to be executed once
+     * to avoid the flicker caused by the suggestion suddenly appearing/disappearing.
+     */
+    public void showHomepageWithSuggestion(boolean showSuggestion) {
+        if (mHomepageView == null) {
+            return;
+        }
+        Log.i(TAG, "showHomepageWithSuggestion: " + showSuggestion);
+        mSuggestionView.setVisibility(showSuggestion ? View.VISIBLE : View.GONE);
+        mHomepageView.setVisibility(View.VISIBLE);
+        mHomepageView = null;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -233,43 +252,30 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        if (mIsEmbeddingActivityEnabled) {
-            final Toolbar toolbarTwoPaneVersion = findViewById(R.id.search_action_bar_two_pane);
-            FeatureFactory.getFactory(this).getSearchFeatureProvider()
-                    .initSearchToolbar(this /* activity */, toolbarTwoPaneVersion,
-                            SettingsEnums.SETTINGS_HOMEPAGE);
-        }
-    }
+        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
-    private void initAvatarView() {
-        final ImageView avatarView = findViewById(R.id.account_avatar);
-        final ImageView avatarTwoPaneView = findViewById(R.id.account_avatar_two_pane_version);
-        if (AvatarViewMixin.isAvatarSupported(this)) {
-            avatarView.setVisibility(View.VISIBLE);
-            getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
+        if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
+            // Only allow features on high ram devices.
+            final ImageView avatarView = findViewById(R.id.account_avatar);
+            if (AvatarViewMixin.isAvatarSupported(this)) {
+                avatarView.setVisibility(View.VISIBLE);
+                getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
+            }
 
-            if (mIsEmbeddingActivityEnabled) {
-                avatarTwoPaneView.setVisibility(View.VISIBLE);
-                getLifecycle().addObserver(new AvatarViewMixin(this, avatarTwoPaneView));
+            if (FeatureFlagUtils.isEnabled(this, FeatureFlags.SILKY_HOME)) {
+                showSuggestionFragment();
+            } else {
+                findViewById(R.id.homepage_title).setVisibility(View.GONE);
+                avatarView.setVisibility(View.GONE);
+            }
+
+            if (FeatureFlagUtils.isEnabled(this, FeatureFlags.CONTEXTUAL_HOME)) {
+                showFragment(new ContextualCardsFragment(), R.id.contextual_cards_content);
             }
         }
-    }
-
-    private void updateHomepageBackground() {
-        if (!mIsEmbeddingActivityEnabled) {
-            return;
-        }
-
-        final Window window = getWindow();
-        final int color = ActivityEmbeddingUtils.isTwoPaneResolution(this)
-                ? Utils.getColorAttrDefaultColor(this, com.android.internal.R.attr.colorSurface)
-                : Utils.getColorAttrDefaultColor(this, android.R.attr.colorBackground);
-
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        // Update status bar color
-        window.setStatusBarColor(color);
-        // Update content background.
-        findViewById(R.id.settings_homepage_container).setBackgroundColor(color);
+        showFragment(new TopLevelSettings(), R.id.main_content);
+        ((FrameLayout) findViewById(R.id.main_content))
+                .getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
     }
 
     private void showSuggestionFragment(boolean scrollNeeded) {
@@ -280,25 +286,16 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         }
 
         mSuggestionView = findViewById(R.id.suggestion_content);
-        mTwoPaneSuggestionView = findViewById(R.id.two_pane_suggestion_content);
         mHomepageView = findViewById(R.id.settings_homepage_container);
-        // Hide the homepage for preparing the suggestion. If scrolling is needed, the list views
-        // should be initialized in the invisible homepage view to prevent a scroll flicker.
-        mHomepageView.setVisibility(scrollNeeded ? View.INVISIBLE : View.GONE);
+        // Hide the homepage for preparing the suggestion.
+        mHomepageView.setVisibility(View.GONE);
         // Schedule a timer to show the homepage and hide the suggestion on timeout.
         mHomepageView.postDelayed(() -> showHomepageWithSuggestion(false),
                 HOMEPAGE_LOADING_TIMEOUT_MS);
-        final FragmentBuilder<?> fragmentBuilder = () -> {
-            try {
-                return fragmentClass.getConstructor().newInstance();
-            } catch (Exception e) {
-                Log.w(TAG, "Cannot show fragment", e);
-            }
-            return null;
-        };
-        showFragment(fragmentBuilder, R.id.suggestion_content);
-        if (mIsEmbeddingActivityEnabled) {
-            showFragment(fragmentBuilder, R.id.two_pane_suggestion_content);
+        try {
+            showFragment(fragment.getConstructor().newInstance(), R.id.suggestion_content);
+        } catch (Exception e) {
+            Log.w(TAG, "Cannot show fragment", e);
         }
     }
 
