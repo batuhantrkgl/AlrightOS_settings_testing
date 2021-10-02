@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- About phone screen, AlrightOS version -->
     <string name="aos_maintainer">Community Build</string>
-   
+
+    <!-- Settings version info -->
+    <string name="aos_version">AlrightOS Version</string>
+
 </resources>
