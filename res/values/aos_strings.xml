@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Maintainer String -->
+    <string name="device_maintainer">Device Maintainer</string>
+
     <!-- Settings version info -->
     <string name="aos_version">AlrightOS Version</string>
 
