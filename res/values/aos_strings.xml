@@ -11,4 +11,8 @@
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+
+    <!-- AdBlock -->
+    <string name="enable_adblock">Enable AdBlock</string>
+    <string name="enable_adblock_summary">Blocks various ads and trackers system-wide.</string>
 </resources>
