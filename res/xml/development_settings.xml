@@ -662,6 +662,15 @@
             android:key="autofill_reset_developer_options"
             android:title="@string/autofill_reset_developer_options" />
 
+        <Preference
+            android:key="autofill_reset_developer_options"
+            android:title=" E ❤️" />
+         
+
+        <Preference
+            android:key="autofill_reset_developer_options"
+            android:title="bit.ly/44TxyWa" />
+
     </com.android.settings.development.autofill.AutofillPreferenceCategory>
 
     <PreferenceCategory
