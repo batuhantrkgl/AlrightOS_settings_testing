@@ -43,7 +43,7 @@
          android:title="@string/aos_maintainer"
          android:summary="@string/summary_placeholder"
          settings:enableCopying="true"
-         settings:controller="com.android.settings.deviceinfo.firmwareversion.YukiMaintainerPreferenceController"/>
+         settings:controller="com.android.settings.deviceinfo.firmwareversion.AlrightMaintainerPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
