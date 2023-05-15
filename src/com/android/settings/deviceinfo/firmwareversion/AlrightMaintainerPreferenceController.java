@@ -26,12 +26,12 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
-public class YukiMaintainerPreferenceController extends BasePreferenceController {
+public class AlrightMaintainerPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
     static final String ALRIGHT_MAINTAINER_PROPERTY = "ro.aos.maintainer";
 
-    public ShirayukiMaintainerPreferenceController(Context context, String preferenceKey) {
+    public AlrightMaintainerPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
