@@ -1,2 +1,7 @@
-   <!-- About phone screen, AlrightOS version -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- About phone screen, AlrightOS version -->
     <string name="aos_maintainer">Community Build</string>
+   
+<\resources>
