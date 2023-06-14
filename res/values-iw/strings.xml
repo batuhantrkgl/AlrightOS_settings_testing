@@ -1512,7 +1512,7 @@
       <item quantity="two">‏קוד גישה שגוי של כרטיס SIM. נותרו לך <xliff:g id="NUMBER_1">%d</xliff:g> ניסיונות.</item>
       <item quantity="many">‏קוד גישה שגוי של כרטיס SIM. נותרו לך <xliff:g id="NUMBER_1">%d</xliff:g> ניסיונות.</item>
       <item quantity="other">‏קוד גישה שגוי של כרטיס SIM. נותרו לך <xliff:g id="NUMBER_1">%d</xliff:g> ניסיונות.</item>
-      <item quantity="one">‏קוד גישה שגוי של כרטיס SIM. נותר לך ניסיון <xliff:g id="NUMBER_0">%d</xliff:g> לפני שיהיה עליך ליצור קשר עם הספק כדי לבטל את נעילת המכשיר.</item>
+      <item quantity="one">‏קוד גישה שגוי של כרטיס SIM. נותר לך ניסיון <xliff:g id="NUMBER_0">%d</xliff:g> לפני שיהיה עליך ליצור קשר עם הספק כדי לבטל את נעילת המכשיר.</item>
     </plurals>
     <string name="wrong_pin_code_one" msgid="6924852214263071441">"‏קוד האימות של כרטיס ה-SIM שגוי. נותר לך ניסיון נוסף אחד לפני שיהיה עליך ליצור קשר עם הספק על מנת לבטל את נעילת המכשיר."</string>
     <string name="pin_failed" msgid="3726505565797352255">"‏פעולת קוד הגישה של כרטיס ה-SIM נכשלה!"</string>
@@ -2448,7 +2448,7 @@
     <string name="accessibility_display_inversion_preference_title" msgid="5476133104746207952">"היפוך צבעים"</string>
     <string name="accessibility_display_inversion_switch_title" msgid="7458595722552743503">"שימוש בהיפוך צבעים"</string>
     <string name="accessibility_display_inversion_shortcut_title" msgid="6889624526691513462">"מקש קיצור להיפוך צבעים"</string>
-    <string name="accessibility_display_inversion_preference_subtitle" msgid="6955835010409034745">"‏באמצעות היפוך צבעים, מסכים בהירים הופכים לכהים.&lt;br/&gt;&lt;br/&gt; הערות: &lt;ol&gt; &lt;li&gt; היפוך צבעים גם הופך מסכים כהים לבהירים.&lt;/li&gt; &lt;li&gt; הצבעים ישתנו במדיה ובתמונות.&lt;/li&gt; &lt;li&gt; אפשר להשתמש בעיצוב כהה כדי להציג רקע כהה. עיצוב כהה פועל עם אפליקציות נתמכות. היפוך צבעים פועל עם כל האפליקציות.&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="accessibility_display_inversion_preference_subtitle" msgid="6955835010409034745">"‏באמצעות היפוך צבעים, מסכים בהירים הופכים לכהים.&lt;br/&gt;&lt;br/&gt; הערות: &lt;ol&gt; &lt;li&gt; היפוך צבעים גם הופך מסכים כהים לבהירים.&lt;/li&gt; &lt;li&gt; הצבעים ישתנו במדיה ובתמונות.&lt;/li&gt; &lt;li&gt; אפשר להשתמש בעיצוב כהה כדי להציג רקע כהה. עיצוב כהה פועל עם אפליקציות נתמכות. היפוך צבעים פועל עם כל האפליקציות.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="accessibility_autoclick_preference_title" msgid="2703143361605555752">"‏Autoclick (זמן שהות)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"מידע על קליק אוטומטי (זמן שהות)"</string>
     <string name="accessibility_autoclick_footer_learn_more_content_description" msgid="7056189627042350691">"מידע נוסף על קליק אוטומטי (זמן שהות)"</string>
@@ -2521,8 +2521,8 @@
     <string name="reduce_bright_colors_about_title" msgid="503655452544934393">"מידע על מצב מעומעם במיוחד"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="7878756844769221647">"עמעום המסך לבהירות נמוכה מהרמה המינימלית של הטלפון"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="8959794720356934888">"עמעום המסך לבהירות נמוכה מהרמה המינימלית של הטאבלט"</string>
-    <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="1061317523242240222">"‏מסך מעומעם יותר מקל על הקריאה.&lt;br/&gt;&lt;br/&gt; ההגדרה הזו עשויה להיות שימושית במקרים הבאים: &lt;ol&gt; &lt;li&gt; כשעוצמת הבהירות המינימלית של הטלפון עדיין בהירה מדי&lt;/li&gt; &lt;li&gt; כשמשתמשים בטלפון כשאין אור בסביבה, למשל בלילה או בחדר חשוך לפני השינה&lt;/li&gt; &lt;/ol&gt;"</string>
-    <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="7839714100830254580">"‏מסך כהה יותר מקל על הקריאה.&lt;br/&gt;&lt;br/&gt; הגדרה זו עשויה להיות שימושית במקרים הבאים: &lt;ol&gt; &lt;li&gt; כשעוצמת הבהירות המינימלית של הטאבלט עדיין בהירה מדי&lt;/li&gt; &lt;li&gt; כשמשתמשים בטאבלט במצבים כהים, למשל בלילה או בחדר חשוך לפני השינה&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="1061317523242240222">"‏מסך מעומעם יותר מקל על הקריאה.&lt;br/&gt;&lt;br/&gt; ההגדרה הזו עשויה להיות שימושית במקרים הבאים: &lt;ol&gt; &lt;li&gt; כשעוצמת הבהירות המינימלית של הטלפון עדיין בהירה מדי&lt;/li&gt; &lt;li&gt; כשמשתמשים בטלפון כשאין אור בסביבה, למשל בלילה או בחדר חשוך לפני השינה&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="7839714100830254580">"‏מסך כהה יותר מקל על הקריאה.&lt;br/&gt;&lt;br/&gt; הגדרה זו עשויה להיות שימושית במקרים הבאים: &lt;ol&gt; &lt;li&gt; כשעוצמת הבהירות המינימלית של הטאבלט עדיין בהירה מדי&lt;/li&gt; &lt;li&gt; כשמשתמשים בטאבלט במצבים כהים, למשל בלילה או בחדר חשוך לפני השינה&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_intensity_preference_title" msgid="7455443033955118267">"עוצמה"</string>
     <string name="reduce_bright_colors_intensity_start_label" msgid="930387498396426039">"עמעום"</string>
     <string name="reduce_bright_colors_intensity_end_label" msgid="1422600205484299860">"הגברה"</string>
@@ -3628,7 +3628,7 @@
     <string name="keywords_draw_overlay" msgid="3170036145197260392">"בועת צ\'אט, מערכת, התראה, חלון, תיבת דו-שיח, הצגה, מעל אפליקציות אחרות, ציור"</string>
     <string name="keywords_flashlight" msgid="2133079265697578183">"פנס, אור, לפיד"</string>
     <string name="keywords_change_wifi_state" msgid="7573039644328488165">"‏wifi, Wi-Fi, החלפת מצב, שליטה"</string>
-    <string name="keywords_more_mobile_networks" msgid="5041272719326831744">"‏סלולרי, נייד, ספק סלולרי, רשת אלחוטית, 4g, 3g, 2g, lte "</string>
+    <string name="keywords_more_mobile_networks" msgid="5041272719326831744">"‏סלולרי, נייד, ספק סלולרי, רשת אלחוטית, 4g, 3g, 2g, lte "</string>
     <string name="keywords_wifi_calling" msgid="4319184318421027136">"‏wifi, ‏wi-fi, שיחה, התקשרות"</string>
     <string name="keywords_display" msgid="874738809280751745">"מסך, מסך מגע"</string>
     <string name="keywords_display_brightness_level" msgid="850742707616318056">"עמעום מסך, מסך מגע, סוללה, בהיר"</string>
@@ -4042,7 +4042,7 @@
     <string name="no_notification_listeners" msgid="2839354157349636000">"אין אפליקציות מותקנות שביקשו גישה להתראות."</string>
     <string name="notification_access_detail_switch" msgid="46386786409608330">"הענקת גישה להתראות"</string>
     <string name="notification_assistant_security_warning_title" msgid="2972346436050925276">"לאשר לאפליקציה \'<xliff:g id="SERVICE">%1$s</xliff:g>\' לגשת אל ההתראות?"</string>
-    <string name="notification_assistant_security_warning_summary" msgid="4846559755787348129">"‏התכונה \'התראות משופרות\' החליפה את \'התראות מותאמות ל-Android\' ב-‏Android 12. התכונה הזו מציגה הצעות לפעולות ולתשובות ומארגנת את ההתראות שלך. \n\nל\'התראות משופרות\' יש גישה לתוכן של התראות, כולל מידע אישי כמו שמות אנשי קשר והודעות. התכונה הזו יכולה גם לסגור התראות או להגיב עליהן (למשל לענות לשיחות טלפון) ולשלוט בתכונה \'נא לא להפריע\'."</string>
+    <string name="notification_assistant_security_warning_summary" msgid="4846559755787348129">"‏התכונה \'התראות משופרות\' החליפה את \'התראות מותאמות ל-Android\' ב-‏Android 12. התכונה הזו מציגה הצעות לפעולות ולתשובות ומארגנת את ההתראות שלך. \n\nל\'התראות משופרות\' יש גישה לתוכן של התראות, כולל מידע אישי כמו שמות אנשי קשר והודעות. התכונה הזו יכולה גם לסגור התראות או להגיב עליהן (למשל לענות לשיחות טלפון) ולשלוט בתכונה \'נא לא להפריע\'."</string>
     <string name="notification_listener_security_warning_title" msgid="5791700876622858363">"לאשר לאפליקציה \'<xliff:g id="SERVICE">%1$s</xliff:g>\' לגשת אל ההתראות?"</string>
     <string name="notification_listener_security_warning_summary" msgid="3668606006326629153">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> תוכל לקרוא את כל ההתראות, כולל מידע אישי כמו שמות של אנשי קשר והודעות טקסט שמתקבלות. האפליקציה תוכל גם לבטל התראות, להעביר אותן למצב נודניק או להפעיל לחצני פעולה שהן כוללות, וכן לענות לשיחות טלפון. \n\nכמו כן, האפליקציה תוכל להפעיל או לכבות את התכונה \'נא לא להפריע\' ולשנות הגדרות קשורות."</string>
     <string name="notification_listener_disable_warning_summary" msgid="8373396293802088961">"אם משביתים את הגישה של <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> להתראות, יכול להיות שגם הגישה לתכונה \'נא לא להפריע\' תושבת."</string>
@@ -4326,7 +4326,7 @@
     <string name="app_pinning_intro" msgid="6409063008733004245">"התכונה \'הצמדת אפליקציה\' מאפשרת לקבע את האפליקציה הנוכחית בתצוגה עד לביטול ההצמדה. אפשר להשתמש בתכונה, למשל, כשנותנים לחבר מהימן לשחק במשחק מסוים."</string>
     <string name="screen_pinning_description" msgid="7289730998890213708">"לאחר הצמדת אפליקציה כלשהי, ייתכן שייפתחו אפליקציות אחרות מאותה אפליקציה ושתתאפשר גישה למידע האישי. \n\nכדי להשתמש בהצמדת אפליקציה: ←\n1.	מפעילים את הצמדת האפליקציה ←\n2.	פותחים את \'מסכים אחרונים\' ←\n3.	מקישים על סמל האפליקציה שמופיע בחלק העליון של המסך ואז מקישים על \'הצמדה\'"</string>
     <string name="screen_pinning_guest_user_description" msgid="5826264265872938958">"לאחר הצמדת אפליקציה כלשהי, ייתכן שייפתחו אפליקציות אחרות מאותה אפליקציה ושתתאפשר גישה למידע האישי. \n\nכדי לשתף את המכשיר באופן מאובטח עם אדם אחר, כדאי להשתמש במקום זאת במשתמש אורח. \n\nכדי להשתמש בהצמדת אפליקציה: \n1.	מפעילים את התכונה \'הצמדת אפליקציה\' \n2.	פותחים את \'מסכים אחרונים\' \n3.	מקישים על סמל האפליקציה שמופיע בחלק העליון של המסך ואז מקישים על \'הצמדה\'"</string>
-    <string name="screen_pinning_dialog_message" msgid="8144925258679476654">"לאחר שמצמידים אפליקציה: \n\n•	 ייתכן שתתאפשר גישה למידע אישי \n		(כמו אנשי קשר ותוכן מהאימייל) \n•	 האפליקציה שהוצמדה עשויה לפתוח אפליקציות אחרות \n\nיש להשתמש בהצמדת אפליקציה רק עם אנשים מהימנים."</string>
+    <string name="screen_pinning_dialog_message" msgid="8144925258679476654">"לאחר שמצמידים אפליקציה: \n\n•	 ייתכן שתתאפשר גישה למידע אישי \n		(כמו אנשי קשר ותוכן מהאימייל) \n•	 האפליקציה שהוצמדה עשויה לפתוח אפליקציות אחרות \n\nיש להשתמש בהצמדת אפליקציה רק עם אנשים מהימנים."</string>
     <string name="screen_pinning_unlock_pattern" msgid="1345877794180829153">"בקשת קו ביטול נעילה לפני ביטול הצמדה"</string>
     <string name="screen_pinning_unlock_pin" msgid="8716638956097417023">"בקשת קוד גישה לפני ביטול הצמדה"</string>
     <string name="screen_pinning_unlock_password" msgid="4957969621904790573">"יש לבקש סיסמה לפני ביטול הצמדה"</string>
@@ -4414,7 +4414,7 @@
     <string name="notifications_redacted" msgid="8820993927920208612">"תוכן רגיש לא במסך הנעילה"</string>
     <string name="notifications_hidden" msgid="2415415452913806859">"לא במסך הנעילה"</string>
     <string name="notifications_priority" msgid="9068574646650663837">"הגדרת \'נא לא להפריע\' בוטלה"</string>
-    <string name="notifications_summary_divider" msgid="6877149909390030983">" / "</string>
+    <string name="notifications_summary_divider" msgid="6877149909390030983">" / "</string>
     <string name="notification_summary_level" msgid="4074326972839105652">"‏רמה %d"</string>
     <string name="notification_summary_channel" msgid="8459033623057872803">"<xliff:g id="CHANNEL_NAME">%1$s</xliff:g> • <xliff:g id="GROUP_NAME">%2$s</xliff:g>"</string>
     <plurals name="notifications_categories_off" formatted="false" msgid="1385401442703692986">
@@ -4571,7 +4571,7 @@
     <string name="usb_transcode_files" msgid="2441954752105119109">"‏המרת הסרטונים לפורמט AVC"</string>
     <string name="usb_transcode_files_summary" msgid="307102635711961513">"ניתן יהיה להפעיל את הסרטונים במספר רב יותר של נגני מדיה, אבל האיכות שלהם יכולה לרדת"</string>
     <string name="usb_use_photo_transfers_desc" msgid="7490250033610745765">"‏העברת תמונות או קבצים אם MTP אינו נתמך (PTP)"</string>
-    <string name="usb_use_tethering" msgid="2897063414491670531">"‏שיתוף אינטרנט ב-USB"</string>
+    <string name="usb_use_tethering" msgid="2897063414491670531">"‏שיתוף אינטרנט ב-USB"</string>
     <string name="usb_use_MIDI" msgid="8621338227628859789">"MIDI"</string>
     <string name="usb_use_MIDI_desc" msgid="6464135515868405143">"‏שימוש במכשיר זה כהתקן MIDI"</string>
     <string name="usb_use" msgid="6783183432648438528">"‏מתי להשתמש ב-USB:"</string>
@@ -4589,7 +4589,7 @@
     <string name="usb_summary_charging_only" msgid="678095599403565146">"טעינת המכשיר"</string>
     <string name="usb_summary_power_only" msgid="4901734938857822887">"טעינת המכשיר המחובר"</string>
     <string name="usb_summary_file_transfers" msgid="5498487271972556431">"העברת קבצים"</string>
-    <string name="usb_summary_tether" msgid="2554569836525075702">"‏שיתוף אינטרנט ב-USB"</string>
+    <string name="usb_summary_tether" msgid="2554569836525075702">"‏שיתוף אינטרנט ב-USB"</string>
     <string name="usb_summary_photo_transfers" msgid="7331503733435780492">"PTP"</string>
     <string name="usb_summary_MIDI" msgid="2372443732675899571">"MIDI"</string>
     <string name="usb_summary_file_transfers_power" msgid="2788374660532868630">"העברת קבצים ואספקת מתח"</string>
@@ -4749,7 +4749,7 @@
     <string name="condition_battery_summary" msgid="8436806157833107886">"התכונות מוגבלות"</string>
     <string name="condition_cellular_title" msgid="155474690792125747">"חבילת הגלישה כבויה"</string>
     <string name="condition_cellular_summary" msgid="1678098728303268851">"‏ניתן להתחבר לאינטרנט רק באמצעות רשת Wi‑Fi"</string>
-    <string name="condition_bg_data_title" msgid="2719263664589753094">"‏חוסך הנתונים (Data Saver)"</string>
+    <string name="condition_bg_data_title" msgid="2719263664589753094">"‏חוסך הנתונים (Data Saver)"</string>
     <string name="condition_bg_data_summary" msgid="1736255283216193834">"התכונות מוגבלות"</string>
     <string name="condition_work_title" msgid="174326145616998813">"פרופיל העבודה כבוי"</string>
     <string name="condition_work_summary" msgid="7113473121312772398">"לאפליקציות והתראות"</string>
