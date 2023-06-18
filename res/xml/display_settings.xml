@@ -78,7 +78,7 @@
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
             settings:keywords="@string/keywords_dark_ui_mode"/>
 
-        <com.android.settings.support.SecureSettingListPreference
+        <ListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
             android:entries="@array/qs_tile_shape_entries"
